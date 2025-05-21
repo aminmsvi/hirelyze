@@ -11,8 +11,8 @@ class Config:
     """
 
     LLM_MODEL: str = os.getenv("LLM_MODEL")
-    LLM_API_KEY: str = os.getenv("OPEN_ROUTER_API_KEY")
-    LLM_BASE_URL: str = os.getenv("OPEN_ROUTER_BASE_URL")
+    LLM_API_KEY: str = os.getenv("LLM_API_KEY")
+    LLM_BASE_URL: str = os.getenv("LLM_BASE_URL")
 
 # Initialize a global config object
 settings = Config()

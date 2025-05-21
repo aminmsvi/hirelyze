@@ -36,10 +36,12 @@ This project is a Streamlit web application that analyzes resumes against job de
     Example `.env` content:
 
     ```env
-    LLM_MODEL="gemma3:12b" # Or any other Ollama model you have running
+    LLM_MODEL       # The Ollama model to use for analysis
+    LLM_API_KEY     # API key for a cloud-based LLM service
+    LLM_BASE_URL    # Base URL for the LLM API endpoint
     ```
 
-    Refer to `config.py` for how `LLM_MODEL` is used. The default is "gemma3:12b". Ensure you have Ollama installed and the specified model pulled (e.g., `ollama pull gemma3:12b`).
+    Refer to `config.py` for how these variables are used.
 
 ## Running the Application
 
